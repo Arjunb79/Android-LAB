@@ -1,44 +1,56 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
-    private EditText n1,n2,dob,email,phone,pass;
-    private Button b;
-    String fs,ls,db,mob,ml,psw;
+    EditText fname,lname,date,email,phone,pass;
+    Button b;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        n1=(EditText) findViewById(R.id.fn);
-        n2=(EditText) findViewById(R.id.ln);
-        dob=(EditText) findViewById(R.id.date);
-        email=(EditText) findViewById(R.id.email);
-        phone=(EditText) findViewById(R.id.phone);
-        pass=(EditText) findViewById(R.id.pass);
+        b = findViewById(R.id.reg);
+        fname = findViewById(R.id.fn);
+        lname = findViewById(R.id.ln);
+        date = findViewById(R.id.date);
+        email = findViewById(R.id.email);
+        phone = findViewById(R.id.phone);
+        pass = findViewById(R.id.pass);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                    fs=n1.getText().toString().trim();
-                    ls=n2.getText().toString().trim();
-                    db=dob.getText().toString().trim();
-                    mob=phone.getText().toString().trim();
-                    ml=email.getText().toString().trim();
-                    psw=pass.getText().toString().trim();
-                    if(fs.equals(" ")){
-                        Toast.makeText(MainActivity.this, "enter the first name", Toast.LENGTH_SHORT).show();
-                    }
-                    else if(ls.equals(" ")){
-                        Toast.makeText(MainActivity.this, "enter the last name", Toast.LENGTH_SHORT).show();
-                    }
+            public void onClick(View v) {
+                if(fname.length()==0){
+                    Toast.makeText(MainActivity.this, "enter first name", Toast.LENGTH_SHORT).show();
+                }
+                if(lname.length()==0){
+                    Toast.makeText(MainActivity.this, "enter last name", Toast.LENGTH_SHORT).show();
+                }
+                if(date.length()==0){
+                    Toast.makeText(MainActivity.this, "enter dob", Toast.LENGTH_SHORT).show();
+                }
+                if(email.length()==0){
+                    Toast.makeText(MainActivity.this, "enter email", Toast.LENGTH_SHORT).show();
+                }
+                if(phone.length()==0){
+                    Toast.makeText(MainActivity.this, "enter phone number", Toast.LENGTH_SHORT).show();
+                }
+                if(pass.length()==0){
+                    Toast.makeText(MainActivity.this, "enter the password", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(MainActivity.this, "registered successfully", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
     }
 }

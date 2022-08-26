@@ -52,6 +52,26 @@
             android:inputType="textPersonName"
             android:hint="Last Name" />
     </LinearLayout>
+     <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        >
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="male"/>
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="female"/>
+    </RadioGroup>
   <EditText
       android:id="@+id/date"
       android:layout_width="match_parent"

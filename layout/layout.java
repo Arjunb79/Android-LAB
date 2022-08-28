@@ -31,19 +31,19 @@ public class MainActivity extends AppCompatActivity {
                 if(fname.length()==0){
                     Toast.makeText(MainActivity.this, "enter first name", Toast.LENGTH_SHORT).show();
                 }
-                if(lname.length()==0){
+                else if(lname.length()==0){
                     Toast.makeText(MainActivity.this, "enter last name", Toast.LENGTH_SHORT).show();
                 }
-                if(date.length()==0){
+                else if(date.length()==0){
                     Toast.makeText(MainActivity.this, "enter dob", Toast.LENGTH_SHORT).show();
                 }
-                if(email.length()==0){
+                else if(email.length()==0){
                     Toast.makeText(MainActivity.this, "enter email", Toast.LENGTH_SHORT).show();
                 }
-                if(phone.length()==0){
+                else if(phone.length()==0){
                     Toast.makeText(MainActivity.this, "enter phone number", Toast.LENGTH_SHORT).show();
                 }
-                if(pass.length()==0){
+                else if(pass.length()==0){
                     Toast.makeText(MainActivity.this, "enter the password", Toast.LENGTH_SHORT).show();
                 }
                 else{

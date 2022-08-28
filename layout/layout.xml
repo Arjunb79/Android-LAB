@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    android:background="@android:color/holo_green_light"
+    android:background="@android:color/darker_gray"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,9 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@android:color/white"
         android:textSize="25dp"
-        android:textColor="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
         android:text="REGISTRATION FORM"/>
 
     <LinearLayout
@@ -52,37 +51,37 @@
             android:inputType="textPersonName"
             android:hint="Last Name" />
     </LinearLayout>
-     <RadioGroup
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:padding="10dp"
         android:layout_marginTop="10dp"
         >
-    <RadioButton
-        android:id="@+id/male"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="male"/>
-    <RadioButton
-        android:id="@+id/female"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="female"/>
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="male"/>
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="female"/>
     </RadioGroup>
-  <EditText
-      android:id="@+id/date"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:hint="dob"
-      android:padding="10dp"
-      android:background="@android:color/white"
-      android:textColorHint="@android:color/black"
-      android:textColor="@android:color/black"
-      android:layout_marginTop="10dp"
-      android:inputType="date"/>
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dob"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:inputType="date"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

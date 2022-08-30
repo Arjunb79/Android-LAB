@@ -2,16 +2,23 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.icu.text.Transliterator;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
     EditText fname,lname,date,email,phone,pass;
     Button b;
+    private Spinner spinner;
+    ArrayAdapter<String> arrayAdapter;
+    String[] degree={"BSC","MCA","BCA","Bcom","BBA"};
 
 
     @Override
@@ -25,6 +32,23 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         phone = findViewById(R.id.phone);
         pass = findViewById(R.id.pass);
+
+        spinner=findViewById(R.id.sp);
+        arrayAdapter =new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_dropdown_item_1line,degree);
+        spinner.setAdapter(arrayAdapter);
+//        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+//                Toast.makeText(MainActivity.this, "you select"+adapterView.getItemAtPosition(i), Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> adapterView) {
+//
+//            }
+//        });
+
+        
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

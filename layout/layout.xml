@@ -51,19 +51,18 @@
             android:inputType="textPersonName"
             android:hint="Last Name" />
     </LinearLayout>
-    <RadioGroup
+
+   <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:layout_column="0"
-        android:layout_span="3"
+       android:orientation="horizontal"
         android:layout_marginTop="10dp">
 
         <RadioButton
             android:id="@+id/male"
-            android:layout_width="match_parent"
+            android:layout_width="145dp"
             android:layout_height="wrap_content"
-
             android:textStyle="bold"
             android:buttonTint="@android:color/black"
             android:text="male"/>
@@ -153,6 +152,8 @@
         android:layout_gravity="center"
         android:textSize="15dp"
         android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_light"
         android:layout_marginTop="10dp"
-        android:hint="Register"/>
+        android:text="Register"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

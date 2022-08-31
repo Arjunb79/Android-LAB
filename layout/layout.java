@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button b;
     private Spinner spinner;
     ArrayAdapter<String> arrayAdapter;
-    String[] degree={"BSC","MCA","BCA","Bcom","BBA"};
+    String[] degree={"---select---","BSC","MCA","BCA","Bcom","BBA"};
 
 
     @Override

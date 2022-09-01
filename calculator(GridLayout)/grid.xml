@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_columnWeight="3"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/num"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:text="CALCULATOR"
+       android:textSize="30dp"
+       android:gravity="center"
+       android:textStyle="bold"
+       android:layout_columnSpan="4"
+       />
+
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="80dp"
+       android:columnCount="4"
+       android:orientation="horizontal">
+
+      <EditText
+          android:id="@+id/re"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_columnSpan="4"
+          android:layout_gravity="fill_horizontal"
+          android:layout_marginTop="110dp"
+          android:hint="result"
+          android:padding="10dp" />
+   </GridLayout>
+
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+         android:orientation="horizontal"
+       android:padding="10dp"
+      android:layout_marginTop="250dp">
+      <Button
+         android:id="@+id/b1"
+         android:text="1"
+         android:layout_columnWeight="1"
+         android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:backgroundTint="@android:color/white"
+         android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/b2"
+          android:text="2"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/b3"
+          android:text="3"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/add"
+          android:text="+"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="OperatorEvent"/>
+   </GridLayout>
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="horizontal"
+       android:padding="10dp"
+      android:layout_marginTop="300dp">
+      <Button
+          android:id="@+id/b4"
+          android:text="4"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/b5"
+          android:text="5"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/b6"
+          android:text="6"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/sub"
+          android:text="-"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="OperatorEvent"/>
+
+   </GridLayout>
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:layout_marginTop="350dp">
+      <Button
+          android:id="@+id/b7"
+          android:text="7"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/b8"
+          android:text="8"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/b9"
+          android:text="9"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/mul"
+          android:text="*"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="OperatorEvent"/>
+
+   </GridLayout>
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:layout_marginTop="400dp">
+      <Button
+          android:id="@+id/clear"
+          android:text="c"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/b0"
+          android:text="0"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="NumberEvent"/>
+
+      <Button
+          android:id="@+id/eq"
+          android:text="="
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="EqualEvent"/>
+
+      <Button
+          android:id="@+id/div"
+          android:text="/"
+          android:layout_columnWeight="1"
+          android:layout_marginTop="3dp"
+          android:layout_margin="3dp"
+          android:onClick="OperatorEvent"/>
+
+   </GridLayout>
+</RelativeLayout>

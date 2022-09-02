@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 n+="0";
                 break;
             case R.id.clear:
-                n+="";
+                n="";
                 break;
         }
         e.setText(n);
@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "/":
                 res=Double.parseDouble(on)/Double.parseDouble(newnum);
+                break;
         }
         e.setText(res+"");
     }

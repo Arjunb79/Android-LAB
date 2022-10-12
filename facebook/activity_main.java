@@ -1,12 +1,14 @@
-package com.ajil.facebook;
+package com.example.facebook;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.view.View;
+
 
 public class MainActivity extends AppCompatActivity {
     EditText e1,e2;
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void create(View view){
-        Intent forgot=new Intent(this, Activity2.class);
-        startActivity(forgot);
+        Intent sign=new Intent(this, Activity2.class);
+        startActivity(sign);
     }
 }
